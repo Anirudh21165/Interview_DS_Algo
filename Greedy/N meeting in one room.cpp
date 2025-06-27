@@ -25,7 +25,7 @@ class Solution{
         int limit=meet[0].end;
         ans.push_back(meet[0].pos);
         for(int i=1;i<n;i++){
-            if(meet[i].start<limit){
+            if(meet[i].start > limit){
                 limit=meet[i].end;
                 ans.push_back(meet[i].pos);
             }
